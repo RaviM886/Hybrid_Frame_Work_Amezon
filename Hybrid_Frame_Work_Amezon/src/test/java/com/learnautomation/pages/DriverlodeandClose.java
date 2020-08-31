@@ -43,14 +43,12 @@ public class DriverlodeandClose {
  	      driver = BrowserFactory.StartApplication(driver,config.getBrowser(),config.getStringURL());  
          //	driver = BrowserFactory.StartApplication(driver, "Chrome", "https://www.amazon.in/");
             System.out.println(driver.getTitle());       
-         	Reporter.log("Browser and application is running ", true);      
-   		
+         	Reporter.log("Browser and application is running ", true);         		
    	}
    	@AfterClass
    	public void teardown() {
    		BrowserFactory.quitBrowser(driver);
-   	}
-   	
+   	}   	
    	@AfterMethod
    	public void tearDownMethod(ITestResult result) throws Exception
    	{
