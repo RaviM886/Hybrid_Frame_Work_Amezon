@@ -8,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -36,11 +37,13 @@ public class DriverlodeandClose {
 	       report.attachReporter(extent);
 	       Reporter.log("Setting Done - Test can be started  ",true);
         }
+        
+       @Parameters("browserabc")
        @BeforeClass
-     	public void setup() {
+     	public void setup(String browserabc) {
    	
          	Reporter.log("Tring to start browser and application is ready ", true);
- 	      driver = BrowserFactory.StartApplication(driver,config.getBrowser(),config.getStringURL());  
+ 	      driver = BrowserFactory.StartApplication(driver, browserabc,config.getStringURL());  
          //	driver = BrowserFactory.StartApplication(driver, "Chrome", "https://www.amazon.in/");
             System.out.println(driver.getTitle());       
          	Reporter.log("Browser and application is running ", true);         		
