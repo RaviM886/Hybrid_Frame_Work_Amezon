@@ -38,12 +38,12 @@ public class DriverlodeandClose {
 	       Reporter.log("Setting Done - Test can be started  ",true);
         }
         
-       //@Parameters({"browserabc","urlToBeTested"})
+      // @Parameters({"browserabc","urlToBeTested"})
        @BeforeClass
      	public void setup(String browserabc , String url) {
    	
          	Reporter.log("Tring to start browser and application is ready ", true);
- 	    //  driver = BrowserFactory.StartApplication(driver,browserabc,url);  
+ 	   //  driver = BrowserFactory.StartApplication(driver,browserabc,url);  
          //	driver = BrowserFactory.StartApplication(driver, "Chrome", "https://www.amazon.in/");
          	 driver = BrowserFactory.StartApplication(driver,config.getBrowser(),config.getStringURL());
             System.out.println(driver.getTitle());       

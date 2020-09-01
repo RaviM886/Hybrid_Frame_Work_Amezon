@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
     <line>
       <![CDATA[setting up report and test is getting ready  ]]>
@@ -7,31 +7,13 @@
     <line>
       <![CDATA[Setting Done - Test can be started  ]]>
     </line>
-    <line>
-      <![CDATA[Tring to start browser and application is ready ]]>
-    </line>
-    <line>
-      <![CDATA[Browser and application is running ]]>
-    </line>
-    <line>
-      <![CDATA[Test is about to end  ]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed >> Report generated ]]>
-    </line>
-    <line>
-      <![CDATA[Test is about to end  ]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed >> Report generated ]]>
-    </line>
   </reporter-output>
-  <suite started-at="2020-08-31T16:56:44Z" name="Suite" finished-at="2020-08-31T16:58:06Z" duration-ms="81923">
+  <suite started-at="2020-09-01T12:46:24Z" name="Suite" finished-at="2020-09-01T12:46:24Z" duration-ms="144">
     <groups>
     </groups>
-    <test started-at="2020-08-31T16:56:44Z" name="Test" finished-at="2020-08-31T16:58:06Z" duration-ms="81923">
+    <test started-at="2020-09-01T12:46:24Z" name="Test" finished-at="2020-09-01T12:46:24Z" duration-ms="144">
       <class name="com.learnautomation.testcases.LoginTestCRM">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:56:40Z" name="setUpSuite" finished-at="2020-08-31T16:56:44Z" duration-ms="3979" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:22Z" name="setUpSuite" finished-at="2020-09-01T12:46:24Z" duration-ms="2703" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[setting up report and test is getting ready  ]]>
@@ -41,59 +23,135 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:56:44Z" name="setup" finished-at="2020-08-31T16:57:34Z" duration-ms="49798" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:24Z" name="setup" finished-at="2020-09-01T12:46:24Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[Tring to start browser and application is ready ]]>
-            </line>
-            <line>
-              <![CDATA[Browser and application is running ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:57:34Z" name="loginApp" finished-at="2020-08-31T16:57:49Z" duration-ms="15796" status="PASS">
+        <test-method signature="loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:24Z" name="loginApp" finished-at="2020-09-01T12:46:24Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:57:49Z" name="tearDownMethod" finished-at="2020-08-31T16:58:01Z" duration-ms="11682" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestCRM.loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:24Z" name="tearDownMethod" finished-at="2020-09-01T12:46:24Z" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Test is about to end  ]]>
-            </line>
-            <line>
-              <![CDATA[Test Completed >> Report generated ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method signature="loginApp1()[pri:2, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:58:01Z" name="loginApp1" finished-at="2020-08-31T16:58:01Z" duration-ms="8" status="PASS">
+        <test-method signature="loginApp1()[pri:2, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:24Z" name="loginApp1" finished-at="2020-09-01T12:46:24Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setup.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp1 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:58:01Z" name="tearDownMethod" finished-at="2020-08-31T16:58:04Z" duration-ms="2797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp1 status=SUCCESS method=LoginTestCRM.loginApp1()[pri:2, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:24Z" name="tearDownMethod" finished-at="2020-09-01T12:46:24Z" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Test is about to end  ]]>
-            </line>
-            <line>
-              <![CDATA[Test Completed >> Report generated ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-08-31T16:58:04Z" name="teardown" finished-at="2020-08-31T16:58:06Z" duration-ms="1721" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@20bd8be5]" started-at="2020-09-01T12:46:24Z" name="teardown" finished-at="2020-09-01T12:46:24Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
