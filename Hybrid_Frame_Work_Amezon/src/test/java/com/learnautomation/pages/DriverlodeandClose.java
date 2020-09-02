@@ -1,5 +1,6 @@
 package com.learnautomation.pages;
 import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 
 import org.testng.ITestResult;
@@ -28,6 +29,7 @@ public class DriverlodeandClose {
         @BeforeSuite
         public void setUpSuite()
         {
+        	 System.out.println("before suite start one ");
         	 Reporter.log("setting up report and test is getting ready  ",true);
         	excel=new ExcelDataReaderAndWriter();
 	       config= new ConfigDataProvider();
@@ -35,16 +37,20 @@ public class DriverlodeandClose {
 	     
 	       report=new ExtentReports();
 	       report.attachReporter(extent);
+	       
 	       Reporter.log("Setting Done - Test can be started  ",true);
+	       System.out.println("before suite start two ");
         }
         
       // @Parameters({"browserabc","urlToBeTested"})
        @BeforeClass
-     	public void setup(String browserabc , String url) {
+     	public void setup() {
+    	  
    	
          	Reporter.log("Tring to start browser and application is ready ", true);
  	   //  driver = BrowserFactory.StartApplication(driver,browserabc,url);  
          //	driver = BrowserFactory.StartApplication(driver, "Chrome", "https://www.amazon.in/");
+         	 System.out.println("before class start  two");
          	 driver = BrowserFactory.StartApplication(driver,config.getBrowser(),config.getStringURL());
             System.out.println(driver.getTitle());       
          	Reporter.log("Browser and application is running ", true);         		
